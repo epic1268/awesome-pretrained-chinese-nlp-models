@@ -334,7 +334,7 @@ OpenCompass 是一款开源、高效、全面的评测大模型体系及开放�
 #### ↳ Star History
 
 <div align="center">
-[![Star History Chart](https://api.star-history.com/svg?repos=lonePatient/awesome-pretrained-chinese-nlp-models&type=Date)](https://star-history.com/#lonePatient/awesome-pretrained-chinese-nlp-models&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=lonePatient/awesome-pretrained-chinese-nlp-models&type=Date)](https://star-history.dera.page/#lonePatient/awesome-pretrained-chinese-nlp-models&Date)
 
 </div>
 

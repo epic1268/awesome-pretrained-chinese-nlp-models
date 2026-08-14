@@ -227,7 +227,7 @@
 #### ↳ Star History
 
 <div align="center">
-[![Star History Chart](https://api.star-history.com/svg?repos=lonePatient/awesome-pretrained-chinese-nlp-models&type=Date)](https://star-history.com/#lonePatient/awesome-pretrained-chinese-nlp-models&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=lonePatient/awesome-pretrained-chinese-nlp-models&type=Date)](https://star-history.dera.page/#lonePatient/awesome-pretrained-chinese-nlp-models&Date)
 
 </div>
 
