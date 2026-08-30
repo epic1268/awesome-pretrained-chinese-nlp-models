@@ -5,6 +5,7 @@
 > 项目更新历史记录
 
 
+- 2026.08.30 增加[Hy4-preview, GLM-5.3, GLM-5.3-Flash, Qwen3.8-Flash-Next, Qwen3.8-27B, Ornith-1.5-35B-A3B, Kimi-K3](#ReasoningLLM)、[MiniMax-Music3, MiniMax-H3](#MultiModal-ChatLLM)、[WeMM-Embedding-2B](#Embedding)，Hy4-preview 是腾讯混元 770B/A49B MoE 旗舰，Gated DSA 稀疏注意力+IndexCache，1M 上下文，Apache-2.0 开源；GLM-5.3 与 GLM-5.2 同底座，开放权重编码 SOTA；GLM-5.3-Flash 是 GLM-5 首个原生多模态模型（320B/A18B），稀疏+线性注意力混合，MIT 开源；Qwen3.8-Flash-Next 是 Qwen4 架构预览（125B/A6B+51B N-gram Embedding），QSA 稀疏注意力；Qwen3.8-27B 是 27B 稠密原生视觉语言模型；Ornith-1.5-35B-A3B 是端到端自改进 agentic 模型（A3/35B）；Kimi-K3 是全球首个开放 3T 级模型（2.8T/A104B），KDA+AttnRes 架构，1M 上下文；MiniMax-Music3 支持歌词+描述细粒度控制与最长 5 分钟完整歌曲生成；MiniMax-H3 是通用全模态生成系统，可生成 2K/15s 视频+原生立体声；WeMM-Embedding-2B 是腾讯通用多模态 Embedding 模型（基于 Qwen3.5-2B，2048 维，支持 MRL）
 - 2026.05.03 增加[Ring-2.6-1T](#ReasoningLLM)、[Ling-2.6-1T](#ReasoningLLM)、[Ling-2.6-flash](#ReasoningLLM)，Ring-2.6-1T 是万亿参数旗舰推理模型，支持 Agent 执行、Reasoning Effort 机制和异步强化学习训练；Ling-2.6-1T 是万亿参数旗舰模型，采用 MLA+Linear Attention 混合架构，Fast Thinking 机制；Ling-2.6-flash 是 104B 总参数/7.4B 激活参数的推理效率优化模型，面向高频 Agent 场景
 - 2026.04.24 增加[DeepSeek-V4-Pro, DeepSeek-V4-Flash](#ReasoningLLM)、[MiMo-V2.5-Pro](#ReasoningLLM)，DeepSeek-V4-Pro 总参数 1.6T/激活 49B，V4-Flash 总参数 284B/激活 13B，均支持 1M 超长上下文；MiMo-V2.5-Pro 是小米开源的 1.02T 总参数 MoE 推理模型，激活 42B 参数，支持 1M 上下文，在通用智能体能力、复杂软件工程和长程任务上表现卓越
 - 2026.04.21 增加[Qwen3.6-35B-A3B](#ReasoningLLM)、[Kimi-K2.6](#ReasoningLLM)、[HY-World-2.0](#MultiModal-ChatLLM)，Qwen3.6-35B-A3B 是 35B 总参数 MoE 架构推理模型，激活 3B 参数；Kimi-K2.6 是 1T 总参数 MoE 架构多模态推理模型，激活 32B 参数，支持长程编码和智能体集群；HY-World-2.0 是腾讯开源的 3D 世界模型，支持从文本/图像/视频生成可编辑的 3D 资产

@@ -9,6 +9,13 @@
 
 |            模型            |            大小            | 时间      |  语言 |  领域 |                                                                     下载                                                                    |                                        项目地址                                       |                              机构/个人                             |   结构   |                                                                                 文                                                                                 |
 | :----------------------: | :----------------------: | ------- | :-: | :-: | :---------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: | :------------------------------------------------------------: | :----: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|        Hy4-preview        |         A49/770B         | 2026-08 |  中英 |  通用 |                                             [🤗HF](https://huggingface.co/tencent/Hy4-preview)                                            |                                 [Hy4-preview](https://github.com/Tencent-Hunyuan/Hy4-preview)                                 |      [Tencent-Hunyuan](https://github.com/Tencent-Hunyuan)     |   MoE  |                          Gated DSA 稀疏注意力+IndexCache 跨层索引复用，iHC 残差，1M 上下文，内置 MTP 推测解码，Apache-2.0 开源                          |
+|       GLM-5.3-Flash       |         A18/320B         | 2026-08 |  中英 | 多模态 |                                          [🤗HF](https://huggingface.co/zai-org/GLM-5.3-Flash)                                           |                                    [GLM-5](https://github.com/zai-org/GLM-5)                                    |              [zai-org](https://github.com/zai-org)             |   MoE  |                     [Blog](https://z.ai/blog/glm-5.3-flash)，GLM-5 首个原生多模态，稀疏+线性注意力混合架构，mHC，MIT 开源                      |
+|          GLM-5.3          |             /            | 2026-08 |  中英 |  通用 |                                             [🤗HF](https://huggingface.co/zai-org/GLM-5.3)                                              |                                    [GLM-5](https://github.com/zai-org/GLM-5)                                    |              [zai-org](https://github.com/zai-org)             |   MoE  |                                [Tech Report](https://arxiv.org/abs/2602.15763)，与 GLM-5.2 同底座，开放权重编码 SOTA，CyberGym 漏洞发现 SOTA                                |
+|     Qwen3.8-Flash-Next    |         A6/180B          | 2026-08 |  中英 |  通用 |                                        [🤗HF](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)                                          |                             [Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next)                             |               [QwenLM](https://github.com/QwenLM)              |   MoE  |                     [Blog](https://qwen.ai/blog?id=qwen3.8-flash-next)，Qwen4 架构预览，QSA 稀疏注意力+N-gram Embedding，262K→1M 上下文                      |
+|    Ornith-1.5-35B-A3B     |           A3/35B         | 2026-08 |  中英 |  代码 |                                       [🤗HF](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)                                        |                                         /                                         |            [ornith-ai](https://huggingface.co/ornith-ai)        |   MoE  |                            [Blog](https://ornith.ai/ornith_1_5.html)，端到端自改进（任务生成+scaffold+rollout 联合优化），MIT 开源                            |
+|        Qwen3.8-27B        |            27B           | 2026-08 |  中英 | 多模态 |                                            [🤗HF](https://huggingface.co/Qwen/Qwen3.8-27B)                                              |                                         /                                         |               [QwenLM](https://github.com/QwenLM)              |  Dense |                                   原生视觉语言模型，支持图像/视频理解，灵活思考控制，262K→1M 上下文，Apache-2.0 开源                                   |
+|         Kimi-K3           |         A104/2.8T        | 2026-06 |  中英 |  通用 |                                            [🤗HF](https://huggingface.co/moonshotai/Kimi-K3)                                            |                                     [Kimi-K3](https://github.com/MoonshotAI/Kimi-K3)                                   |           [MoonshotAI](https://github.com/MoonshotAI)          |   MoE  |                    [Tech Blog](https://www.kimi.com/blog/kimi-k3)，全球首个开放 3T 级模型，KDA+AttnRes 架构，原生多模态，1M 上下文                    |
 |          GLM-5.2           |             /            | 2026-06 |  中英 |  通用 |                                           [🤗HF](https://huggingface.co/zai-org/GLM-5.2)                                                  |                                         /                                         |              [zai-org](https://github.com/zai-org)             |   /    |                     [Blog](https://z.ai/blog/glm-5.2)，1M上下文，IndexShare稀疏注意力，MTP推测解码，MIT开源                      |
 |       Kimi-K2.7-Code       |          A32/1T          | 2026-06 |  中英 |  代码 |                                           [🤗HF](https://huggingface.co/moonshotai/Kimi-K2.7-Code)                                          |                                         /                                         |           [MoonshotAI](https://github.com/MoonshotAI)          |   MoE  |                                         coding-focused agentic model，thinking-token 降低约 30%                                         |
 |         MiniMax-M3         |         A23/428B         | 2026-06 |  中英 | 多模态 |                                           [🤗HF](https://huggingface.co/MiniMaxAI/MiniMax-M3)                                           |                                         /                                         |           [MiniMax-AI](https://github.com/MiniMax-AI)          |   MoE  |                              native multimodal model，1M context，MSA 稀疏注意力，9× prefill / 15× decode 加速                              |
@@ -74,6 +81,131 @@
 ---
 
 ## 模型更新说明
+
+### Hy4-preview
+
+**模型简介**
+
+Hy4-preview 是腾讯混元 Hy 团队推出的新一代 MoE 旗舰模型，总参数 770B、每 token 激活 49B，支持 1M Token 上下文，另内置 1 层原生 MTP（10B 总参数/0.7B 激活）用于推测解码。
+
+**核心亮点**
+
+- **Gated DSA 稀疏注意力**：采用 Gated DeepSeek Sparse Attention，并结合 IndexCache 实现跨层稀疏索引复用，大幅降低长上下文推理开销。
+- **iHC 残差连接**：identity Hyper-Connections 扩展层间信息流。
+- **大规模 MoE**：78 层，256 路由专家 + 1 共享专家，每 token 激活 top-8 路由专家。
+- **Pure Open**：Apache-2.0 开源许可证。
+
+**参考链接**
+
+- [GitHub](https://github.com/Tencent-Hunyuan/Hy4-preview)
+- [HuggingFace](https://huggingface.co/tencent/Hy4-preview)
+
+### GLM-5.3
+
+**模型简介**
+
+GLM-5.3 是 zai-org 推出的开放权重旗舰模型，与 GLM-5.2 共用同一底座，全部增益来自后训练，是目前最强的开放权重编码模型。
+
+**核心亮点**
+
+- **Stronger Coding**：在 Z.ai Code Bench 上较 GLM-5.2 提升 50%，并在 Terminal Bench 3.0、Agents' Last Exam 等公开基准上达到开源 SOTA。
+- **Emergent Cyber Capability**：在 CyberGym 漏洞发现上达到 SOTA，在利用链基准上较 GLM-5.2 翻倍以上。
+- **Flexible Effort**：支持 `reasoning_effort`（low/high/max）思考力度控制。
+
+**参考链接**
+
+- [技术报告](https://arxiv.org/abs/2602.15763)
+- [HuggingFace](https://huggingface.co/zai-org/GLM-5.3)
+
+### GLM-5.3-Flash
+
+**模型简介**
+
+GLM-5.3-Flash 是 GLM-5 系列首个原生多模态模型，320B 总参数/18B 激活，以约 1/10 的成本在基准与实际工作负载上超越 GLM-5.2，编码与 agentic 基准接近 Claude Opus 4.8。
+
+**核心亮点**
+
+- **Hybrid Attention**：首次在 GLM 系列引入稀疏+线性注意力混合架构，显著降低长上下文服务成本。
+- **mHC**：采用流形约束超连接（Manifold-Constrained Hyper-Connections）提升 scaling 效率。
+- **多模态预训练**：基于最新的 30T Token 多模态预训练语料。
+- **Pure Open**：MIT 开源许可证。
+
+**参考链接**
+
+- [技术博客](https://z.ai/blog/glm-5.3-flash)
+- [HuggingFace](https://huggingface.co/zai-org/GLM-5.3-Flash)
+
+### Qwen3.8-Flash-Next
+
+**模型简介**
+
+Qwen3.8-Flash-Next 是 Qwen 团队发布的 Qwen4 底层架构实验性预览模型，语言模型 125B 总参数/6B 激活，另含 51B N-gram Embedding 与 4B MTP，原生 262K 上下文可扩展至 1M。
+
+**核心亮点**
+
+- **QSA 稀疏注意力**：Gated DeltaNet 与 Qwen Sparse Attention（微块级稀疏）混合架构，显著降低长上下文延迟。
+- **Gated Residual**：门控残差流，通过逐元素数据依赖读门与分支标量写门实现细粒度表达。
+- **N-gram Embedding**：以短 n-gram 索引实现低算力参数扩展（2 亿规模 bigram/trigram），适合内存受限场景。
+- **视觉理解**：带视觉编码器，支持图像输入。
+
+**参考链接**
+
+- [技术博客](https://qwen.ai/blog?id=qwen3.8-flash-next)
+- [技术报告](https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf)
+- [HuggingFace](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
+
+### Qwen3.8-27B
+
+**模型简介**
+
+Qwen3.8-27B 是 Qwen3.8 系列中面向部署友好的紧凑稠密模型（27B），也是原生视觉语言模型，支持图像与视频（含小时级长视频）理解。
+
+**核心亮点**
+
+- **核心能力提升**：编码、专业工作、研究与长程 agentic 任务全面增强，Terminal Bench 2.1 达 73.0、SWE-bench Pro 达 61.7。
+- **Agent 执行**：更强的自主规划与环境反馈处理，端到端任务完成更可靠。
+- **灵活思考控制**：thinking 默认开启可按请求关闭，支持 `reasoning_effort` 调节推理深度，`preserve_thinking` 保留历史思考上下文。
+- **Pure Open**：Apache-2.0 开源许可证。
+
+**参考链接**
+
+- [HuggingFace](https://huggingface.co/Qwen/Qwen3.8-27B)
+
+### Ornith-1.5-35B-A3B
+
+**模型简介**
+
+Ornith-1.5-35B-A3B 是 ornith-ai 推出的端到端自改进基础模型，35B 总参数 MoE、每 token 仅激活约 3B；在 Ornith-1.0（基于 Qwen3.5 与 Gemma4 继续训练）基础上，将自改进循环从 scaffold/rollout 优化扩展到任务生成、scaffold 构建与解法 rollout 的联合优化。
+
+**核心亮点**
+
+- **自改进闭环**：不依赖人工固定任务与手工 harness，持续生成新训练任务、发现有效解题策略并通过强化学习改进策略。
+- **编码与 agentic 能力**：全面超越同尺寸 Qwen3.6-35B，SWE-bench Verified 达 79，Terminal-Bench 2.1 达 67.8。
+- **Pure Open**：MIT 开源许可证。
+
+**参考链接**
+
+- [技术博客](https://ornith.ai/ornith_1_5.html)
+- [HuggingFace](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
+
+### Kimi K3
+
+**模型简介**
+
+Kimi K3 是 MoonshotAI 最新旗舰模型，总参数 2.8T/激活 104B，是全球首个开放的 3T 级模型；原生多模态，支持文本、图像与视频理解，拥有 1M Token 上下文窗口。
+
+**核心亮点**
+
+- **新架构**：基于 Kimi Delta Attention (KDA) 与 Attention Residuals (AttnRes)，Stable LatentMoE 框架在 896 专家中激活 16 个，整体 scaling 效率较 Kimi K2 提升约 2.5 倍。
+- **长程编码**：在最少人工监督下可持续长程工程会话，覆盖 GPU kernel 优化、编译器开发、视觉闭环游戏开发、CAD 乃至芯片设计。
+- **Agentic 知识工作**：可产出带交互式可视化、组件与仪表盘的深度研究，以及动效设计与视频编辑。
+- **原生多模态与长上下文**：同一模型内理解文本/图像/视频，1M Token 上下文。
+
+**参考链接**
+
+- [技术博客](https://www.kimi.com/blog/kimi-k3)
+- [完整技术报告](https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf)
+- [HuggingFace](https://huggingface.co/moonshotai/Kimi-K3)
 
 ### GLM-5.2
 

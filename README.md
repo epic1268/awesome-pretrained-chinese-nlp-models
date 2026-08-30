@@ -124,16 +124,11 @@
 
 | 模型 | 大小 | 时间 | 领域 | 下载 | 项目 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| MiniMax-Music3 | ≈11B | 2026-08 | 文音 | [🤗HF](https://huggingface.co/MiniMaxAI/MiniMax-Music3) | [MiniMax-Music3](https://github.com/MiniMax-AI/MiniMax-Music3) |
+| MiniMax-H3 | 33B | 2026-07 | 音视频 | [🤗HF](https://huggingface.co/MiniMaxAI/MiniMax-H3) | [MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3) |
 | HY-World-2.0 | 1.2B | 2026-04 | 3D世界 | [🤗HF](https://huggingface.co/tencent/HY-World-2.0) | [HY-World-2.0](https://github.com/Tencent/HY-World-2.0) |
 | Gemma-4-IT | E2B~31B | 2026-04 | 通用 | [🤗HF](https://huggingface.co/collections/google/gemma-4) | - |
 | Qianfan-OCR | 4B | 2026-03 | 文档 | [🤗HF](https://huggingface.co/baidu/Qianfan-OCR) | [GitHub](https://github.com/baidubce/Qianfan-VL) |
-| AutoGLM-Phone | 9B | 2025-12 | Agent | [🤗HF](https://huggingface.co/zai-org/AutoGLM-Phone-9B) | [Open-AutoGLM](https://github.com/zai-org/Open-AutoGLM) |
-| Dolphin-v2 | 3B | 2025-12 | 文图 | [🤗HF](https://huggingface.co/ByteDance/Dolphin-v2) | [Dolphin](https://github.com/bytedance/Dolphin) |
-| DeepSeek-OCR | 3B | 2025-10 | 文图 | [🤗HF](https://huggingface.co/deepseek-ai/DeepSeek-OCR) | [DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) |
-| Qwen-Image | 20B | 2025-08 | 文图 | [🤗HF](https://huggingface.co/Qwen/Qwen-Image) | [Qwen-Image](https://github.com/QwenLM/Qwen-Image) |
-| InternVL 2.5 | 2~78B | 2024-12 | 文图 | [🤗HF](https://huggingface.co/collections/OpenGVLab/internvl-25-673e1019b66e2218f68d7c1c) | [InternVL](https://github.com/OpenGVLab/InternVL) |
-| Qwen2-VL | 2/7/72B | 2024-08 | 图文视 | [🤗HF](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct) | [Qwen2-VL](https://github.com/QwenLM/Qwen2-VL) |
-| MiniCPM-V 2.6 | 8B | 2024-08 | 文图视 | [🤗HF](https://huggingface.co/openbmb/MiniCPM-V-2_6) | [MiniCPM-V](https://github.com/OpenBMB/MiniCPM-V) |
 
 > 📋 查看全部 90+ 个模型请访问 [MultiModal-ChatLLM 完整列表 →](docs/multimodal-chat-llm.md)
 
@@ -143,17 +138,11 @@
 
 | 模型 | 大小 | 时间 | 架构 | 下载 | 项目 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| GLM-5.2 | / | 2026-06 | / | [🤗HF](https://huggingface.co/zai-org/GLM-5.2) | / |
-| Kimi-K2.7-Code | A32/1T | 2026-06 | MoE | [🤗HF](https://huggingface.co/moonshotai/Kimi-K2.7-Code) | / |
-| MiniMax-M3 | A23/428B | 2026-06 | MoE | [🤗HF](https://huggingface.co/MiniMaxAI/MiniMax-M3) | / |
-| DeepSeek-V4-Pro | A49/1.6T | 2026-04 | MoE | [🤗HF](https://huggingface.co/collections/deepseek-ai/deepseek-v4) | [DeepSeek-V4](https://github.com/deepseek-ai/DeepSeek-V4) |
-| MiMo-V2.5-Pro | A42/1.02T | 2026-04 | MoE | [🤗HF](https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro) | [MiMo](https://github.com/XiaomiMiMo/MiMo) |
-| Kimi-K2.6 | A32/1T | 2026-04 | MoE | [🤗HF](https://huggingface.co/moonshotai/Kimi-K2.6) | [Kimi-K2.6](https://github.com/MoonshotAI/Kimi-K2.6) |
-| Qwen3.6 | A3/35B | 2026-04 | MoE | [🤗HF](https://huggingface.co/Qwen/Qwen3.6-35B-A3B) | [Qwen3.6](https://github.com/QwenLM/Qwen3.6) |
-| DeepSeek-V3.2 | / | 2025-12 | MoE | [🤗HF](https://huggingface.co/deepseek-ai/DeepSeek-V3.2) | [DeepSeek-V3.2-Exp](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp) |
-| QwQ-32B | 32B | 2025-03 | CD | [🤗HF](https://huggingface.co/Qwen/QwQ-32B) | / |
-| DeepSeek-R1 | A37/671B | 2025-01 | MoE | [🤗HF](https://huggingface.co/deepseek-ai/DeepSeek-R1) | [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1) |
-| MiniMax-M1 | A46/456B | 2025-06 | MoE | [🤗HF](https://huggingface.co/MiniMaxAI) | [MiniMax-M1](https://github.com/MiniMax-AI/MiniMax-M1) |
+| Hy4-preview | A49/770B | 2026-08 | MoE | [🤗HF](https://huggingface.co/tencent/Hy4-preview) | [Hy4-preview](https://github.com/Tencent-Hunyuan/Hy4-preview) |
+| GLM-5.3-Flash | A18/320B | 2026-08 | MoE | [🤗HF](https://huggingface.co/zai-org/GLM-5.3-Flash) | [GLM-5](https://github.com/zai-org/GLM-5) |
+| GLM-5.3 | / | 2026-08 | MoE | [🤗HF](https://huggingface.co/zai-org/GLM-5.3) | [GLM-5](https://github.com/zai-org/GLM-5) |
+| Qwen3.8-Flash-Next | A6/180B | 2026-08 | MoE | [🤗HF](https://huggingface.co/Qwen/Qwen3.8-Flash-Next) | [Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next) |
+| Ornith-1.5-35B-A3B | A3/35B | 2026-08 | MoE | [🤗HF](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B) | / |
 
 > 📋 查看全部 50+ 个模型请访问 [ReasoningLLM 完整列表 →](docs/reasoning-llm.md)
 
@@ -163,13 +152,13 @@
 
 |         模型         |     大小    | 时间      |  语言 |  领域 |                                   下载                                  |                             项目地址                             |                                 机构/个人                                |                           文                          |
 | :----------------: | :-------: | ------- | :-: | :-: | :-------------------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------------------: | :--------------------------------------------------: |
+| WeMM-Embedding-2B |    2B    | 2026-08 |  中英 |  通用 |          [\[🤗HF\]](https://huggingface.co/tencent/WeMM-Embedding-2B)          |        [WeMM-Embedding](https://github.com/Tencent/WeMM-Embedding)        |                   [Tencent](https://github.com/Tencent)                  |       [Arxiv](https://arxiv.org/abs/2608.24053)，通用多模态 Embedding，支持文本/图像/视频/视觉文档，2048 维，支持 MRL      |
 |   Qwen3-Embedding  |  0.6/4/8B | 2025-06 |  多语 |  通用 |      [\[🤗HF\]](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B)     | [Qwen3-Embedding](https://github.com/QwenLM/Qwen3-Embedding) |                  [QwenLM](https://github.com/QwenLM)                 |       [Arxiv](https://arxiv.org/abs/2506.05176)      |
 |   JinaColBERT V2   |   large   | 2024-08 |  多语 |  通用 |       \[[🤗HF\]](https://huggingface.co/jinaai/jina-colbert-v2)       |                               /                              |               [Jina AI](https://huggingface.co/jinaai)               |       [Paper](https://arxiv.org/abs/2408.16672)      |
 | Conan-embedding-v1 |   large   | 2024-08 |  中文 |  通用 |    \[[🤗HF\]](https://huggingface.co/TencentBAC/Conan-embedding-v1)   |                               /                              |            [TencentABC](https://huggingface.co/TencentBAC)           |       [Paper](https://arxiv.org/abs/2408.15710)      |
 |      xiaobu-v2     |   large   | 2024-07 |  中文 |  通用 |     \[[🤗HF\]](https://huggingface.co/lier007/xiaobu-embedding-v2)    |                               /                              |               [lier007](https://huggingface.co/lier007)              |
-|    zpoint\_large   |   Large   | 2024-06 |  中文 |  通用 | \[[🤗HF\]](https://huggingface.co/iampanda/zpoint_large_embedding_zh) |                               /                              |              **[yang](https://huggingface.co/iampanda)**             |
 
-> 📋 查看全部 15 个模型请访问 [Embedding 完整列表 →](docs/embedding.md)
+> 📋 查看全部 16 个模型请访问 [Embedding 完整列表 →](docs/embedding.md)
 
 
 
@@ -303,14 +292,11 @@ OpenCompass 是一款开源、高效、全面的评测大模型体系及开放�
 
 ## 更新
 
+- 2026.08.30 增加[Hy4-preview, GLM-5.3, GLM-5.3-Flash, Qwen3.8-Flash-Next, Qwen3.8-27B, Ornith-1.5-35B-A3B, Kimi-K3](docs/reasoning-llm.md)，Hy4-preview 是腾讯混元 770B/A49B MoE 旗舰，Gated DSA 稀疏注意力+IndexCache，1M 上下文，Apache-2.0 开源；GLM-5.3 与 GLM-5.2 同底座，开放权重编码 SOTA；GLM-5.3-Flash 是 GLM-5 首个原生多模态模型（320B/A18B），稀疏+线性注意力混合，MIT 开源；Qwen3.8-Flash-Next 是 Qwen4 架构预览（125B/A6B+51B N-gram Embedding），QSA 稀疏注意力；Qwen3.8-27B 是 27B 稠密原生视觉语言模型；Ornith-1.5-35B-A3B 是端到端自改进 agentic 模型（A3/35B）；Kimi-K3 是全球首个开放 3T 级模型（2.8T/A104B），KDA+AttnRes 架构，1M 上下文
+- 2026.08.30 增加[MiniMax-Music3, MiniMax-H3](docs/multimodal-chat-llm.md)，MiniMax-Music3 是音乐生成模型，支持歌词+描述细粒度控制与最长 5 分钟完整歌曲生成，32kHz 立体声；MiniMax-H3 是通用全模态生成系统，统一理解文本/图像/视频/音频，生成最高 2K、15 秒视频并输出原生立体声
+- 2026.08.30 增加[WeMM-Embedding-2B](docs/embedding.md)，腾讯开源的通用多模态 Embedding 模型，基于 Qwen3.5-2B，支持文本/图像/视频/视觉文档与交错多模态输入，输出 2048 维向量并支持 MRL
 - 2026.06.19 增加[GLM-5.2](docs/reasoning-llm.md)，zai-org 最新旗舰推理模型，专为长程任务设计，支持稳定 1M Token 上下文，采用 IndexShare 稀疏注意力架构与 MTP 推测解码，MIT 开源许可证
 - 2026.06.16 增加[Kimi-K2.7-Code](docs/reasoning-llm.md)、[MiniMax-M3](docs/reasoning-llm.md)，Kimi-K2.7-Code 是基于 Kimi K2.6 构建的代码领域 agentic 模型，MoE 架构（1T / 32B），上下文 256K，thinking-token 较 K2.6 降低约 30%；MiniMax-M3 是原生多模态模型，A23/428B，支持 1M 上下文，采用 MiniMax Sparse Attention (MSA) 实现 9× prefill / 15× decode 加速，在编码与长程 agentic 协作任务上达前沿水平
-- 2026.05.03 增加[Ring-2.6-1T](docs/reasoning-llm.md)、[Ling-2.6-1T](docs/reasoning-llm.md)、[Ling-2.6-flash](docs/reasoning-llm.md)，Ring-2.6-1T 是万亿参数旗舰推理模型，支持 Agent 执行、Reasoning Effort 机制和异步强化学习训练；Ling-2.6-1T 是万亿参数旗舰模型，采用 MLA+Linear Attention 混合架构，Fast Thinking 机制；Ling-2.6-flash 是 104B 总参数/7.4B 激活参数的推理效率优化模型，面向高频 Agent 场景
-- 2026.04.24 增加[DeepSeek-V4-Pro, DeepSeek-V4-Flash](docs/reasoning-llm.md)、[MiMo-V2.5-Pro](docs/reasoning-llm.md)，DeepSeek-V4-Pro 总参数 1.6T/激活 49B，V4-Flash 总参数 284B/激活 13B，均支持 1M 超长上下文；MiMo-V2.5-Pro 是小米开源的 1.02T 总参数 MoE 推理模型，激活 42B 参数，支持 1M 上下文
-- 2026.04.21 增加[Qwen3.6-35B-A3B](docs/reasoning-llm.md)、[Kimi-K2.6](docs/reasoning-llm.md)、[HY-World-2.0](docs/multimodal-chat-llm.md)
-- 2026.04.12 增加[MiniMax-M2.7](docs/reasoning-llm.md)，MiniMax 开源的推理大模型，230B 总参数 MoE 架构，激活 10B 参数
-- 2026.04.06 增加[Gemma-4](docs/multimodal-chat-llm.md)，Google DeepMind 开源的多模态大模型
-- 2026.02.16 增加[Step-3.5-Flash, GLM-5, MiniMax-M2.5, Kimi-K2.5, Ring-2.5-1T](docs/reasoning-llm.md)、[GLM-OCR, Ace-Step1.5, HunyuanImage-3.0-Instruct](docs/multimodal-chat-llm.md)
 
 > 📋 查看完整更新日志请访问 [更新日志 →](docs/changelog.md)
 
